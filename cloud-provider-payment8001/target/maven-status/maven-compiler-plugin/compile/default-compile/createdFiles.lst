@@ -1,0 +1,7 @@
+mocker\tech\springcloud\entities\CommonResult.class
+mocker\tech\springcloud\dao\PaymentDao.class
+mocker\tech\springcloud\service\impl\PaymentServiceImpl.class
+mocker\tech\springcloud\service\PaymentService.class
+mocker\tech\springcloud\controller\PaymentController.class
+mocker\tech\springcloud\PaymentMain8001.class
+mocker\tech\springcloud\entities\Payment.class

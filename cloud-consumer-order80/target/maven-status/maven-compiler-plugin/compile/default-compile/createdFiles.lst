@@ -1,0 +1,5 @@
+mocker\tech\entities\Payment.class
+mocker\tech\MainApp80.class
+mocker\tech\config\ApplicationContextConfig.class
+mocker\tech\controller\OrderController.class
+mocker\tech\entities\CommonResult.class
