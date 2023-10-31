@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Mocker Li
@@ -48,6 +49,11 @@ public class PaymentController
         Payment payment = paymentService.getPaymentById(id);
         log.info("*****查询结果:{}",payment);
         log.info("hello");
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         if (payment != null) {
             return new CommonResult(200,"查询成功, port:"+port,payment);
         }else{
