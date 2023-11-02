@@ -4,6 +4,8 @@
 
 package mocker.tech.springcloud.service;
 
+import org.springframework.web.bind.annotation.PathVariable;
+
 /**
  * @author Mocker Li
  * @date 2023/11/1
@@ -22,5 +24,12 @@ public interface PaymentService {
      * @return
      */
     public String paymentInfo_TimeOut(Integer id);
+
+    /**
+     * 服务熔断
+     * @param id id
+     * @return
+     */
+    public String paymentCircuitBreaker(@PathVariable("id") Integer id);
 
 }
